@@ -1,0 +1,3 @@
+#!/bin/bash
+
+pm2 delete rest && npx tsc && pm2 start --name=rest dist/index.js
